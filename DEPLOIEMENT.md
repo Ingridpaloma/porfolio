@@ -70,4 +70,22 @@ N'oubliez pas de :
 - ✅ Modifier les informations de contact dans `index.html`
 - ✅ Ajouter vos projets dans `projects.js`
 - ✅ Personnaliser la section "À propos" si nécessaire
+- ✅ Ajouter vos photos et vidéos dans le dossier `images/projets/` (voir `GUIDE_MEDIAS.md`)
+
+## 📸 Gestion des médias (photos/vidéos)
+
+Si vous utilisez des photos et vidéos locales :
+
+1. **Organisez vos fichiers** dans `images/projets/projet-X/`
+2. **Référencez-les** dans `projects.js` avec des chemins relatifs :
+   ```javascript
+   video: 'images/projets/projet-1/video.mp4',
+   images: ['images/projets/projet-1/img1.jpg', 'images/projets/projet-1/img2.png']
+   ```
+3. **Optimisez vos fichiers** avant de les pousser sur GitHub :
+   - Vidéos : < 50 MB recommandé (utilisez HandBrake pour compresser)
+   - Images : Optimisez avec TinyPNG ou Squoosh
+4. **Pour les gros fichiers** (> 100 MB), utilisez [Git LFS](https://git-lfs.github.com/)
+
+📖 **Voir le guide complet** : `GUIDE_MEDIAS.md`
 

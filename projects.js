@@ -53,8 +53,8 @@ const projectsData = {
             date: '2024',
             // Détails supplémentaires pour la page de détail
             detailDescription: 'Ce projet complet combine analyse de données, machine learning et visualisation interactive. Il comprend une analyse approfondie des comportements clients, la création de segments RFM, et un modèle prédictif déployé via une application web.',
-            video: '', // URL de la vidéo (YouTube, Vimeo, ou fichier local)
-            images: [], // Tableau d'URLs d'images : ['images/projet1/img1.jpg', 'images/projet1/img2.jpg']
+            video: 'C:\Users\Ingrid\Desktop\Porfolio\images\projets\projet1\demonstration.mp4', // Vidéo : URL YouTube/Vimeo OU chemin local (ex: 'images/projets/projet-1/video.mp4')
+            images: [], // Images locales : ['images/projets/projet-1/img1.jpg', 'images/projets/projet-1/img2.png']
             longDescription: 'Développement d\'une solution complète d\'analyse client pour un site e-commerce. Le projet inclut l\'exploration et le nettoyage des données, la création de métriques RFM, la segmentation automatique des clients, et la prédiction des segments futurs grâce à un modèle de machine learning. L\'application Streamlit permet une interaction intuitive avec les résultats.',
             features: [
                 'Analyse exploratoire des données clients',

@@ -181,13 +181,19 @@ function showProjectDetail(projectId) {
                 </div>
             `;
         } else {
-            // Fichier vidéo local
+            // Fichier vidéo local - détecter le type MIME automatiquement
+            const videoExt = project.video.split('.').pop().toLowerCase();
+            let mimeType = 'video/mp4'; // Par défaut
+            if (videoExt === 'webm') mimeType = 'video/webm';
+            else if (videoExt === 'ogg' || videoExt === 'ogv') mimeType = 'video/ogg';
+            else if (videoExt === 'mov') mimeType = 'video/quicktime';
+            
             videoHTML = `
                 <div class="project-media">
                     <h3>Vidéo de présentation</h3>
                     <div class="video-container">
-                        <video controls>
-                            <source src="${project.video}" type="video/mp4">
+                        <video controls preload="metadata">
+                            <source src="${project.video}" type="${mimeType}">
                             Votre navigateur ne supporte pas la lecture de vidéos.
                         </video>
                     </div>
