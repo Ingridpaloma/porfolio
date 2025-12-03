@@ -50,11 +50,11 @@ const projectsData = {
             image: '🛒',
             github: '', // À remplir avec votre lien GitHub
             demo: '', // À remplir si vous avez une démo Streamlit
-            date: '2024',
+            date: '',
             // Détails supplémentaires pour la page de détail
             detailDescription: 'Ce projet complet combine analyse de données, machine learning et visualisation interactive. Il comprend une analyse approfondie des comportements clients, la création de segments RFM, et un modèle prédictif déployé via une application web.',
-            video: 'C:\Users\Ingrid\Desktop\Porfolio\images\projets\projet1\demonstration.mp4', // Vidéo : URL YouTube/Vimeo OU chemin local (ex: 'images/projets/projet-1/video.mp4')
-            images: [], // Images locales : ['images/projets/projet-1/img1.jpg', 'images/projets/projet-1/img2.png']
+            video: 'images/projets/projet1/demonstration2.mp4', // Vidéo : URL YouTube/Vimeo OU chemin local (ex: 'images/projets/projet-1/video.mp4')
+            images: ['images/projets/projet1/Vue_Globale.png', 'images/projets/projet1/Analyse_client.png', 'images/projets/projet1/Analyse_Produit.png','images/projets/projet1/cm_normalized.png','images/projets/projet1/Capture_presentation.png', 'images/projets/projet1/Image_Segment.png'], // Images locales : ['images/projets/projet-1/img1.jpg', 'images/projets/projet-1/img2.png']
             longDescription: 'Développement d\'une solution complète d\'analyse client pour un site e-commerce. Le projet inclut l\'exploration et le nettoyage des données, la création de métriques RFM, la segmentation automatique des clients, et la prédiction des segments futurs grâce à un modèle de machine learning. L\'application Streamlit permet une interaction intuitive avec les résultats.',
             features: [
                 'Analyse exploratoire des données clients',
@@ -74,10 +74,9 @@ const projectsData = {
             image: '📊',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Tableau de bord complet pour l\'analyse des ressources humaines avec visualisations interactives et KPIs clés.',
-            video: '',
-            images: [],
+            video: 'images/projets/projet2/Analyse_RH.mp4',
             longDescription: 'Création d\'un tableau de bord Power BI professionnel pour analyser les données RH. Le dashboard inclut des visualisations sur le recrutement, la rétention, la diversité, les performances et bien plus encore.',
             features: [
                 'Visualisation des KPIs RH en temps réel',
@@ -96,9 +95,9 @@ const projectsData = {
             image: '🔌',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Transformation digitale d\'un processus manuel en solution BI automatisée pour la maintenance préventive.',
-            video: '',
+            video: 'images/projets/projet3/DEFAILLANCES_IONITY.mp4',
             images: [],
             longDescription: 'Migration d\'un système de suivi Excel vers un dashboard Power BI professionnel permettant un suivi en temps réel des pannes, la priorisation automatique des interventions et l\'optimisation des ressources de maintenance.',
             features: [
@@ -118,9 +117,9 @@ const projectsData = {
             image: '💼',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Rapport Power BI avancé avec modélisation de données et fonctionnalités interactives pour l\'analyse commerciale.',
-            video: '',
+            video: 'images/projets/projet4/Axa_formation.mp4',
             images: [],
             longDescription: 'Développement d\'un rapport Power BI complet avec modélisation de données, mesures DAX complexes, et fonctionnalités avancées comme les tooltips personnalisés, drillthrough et signets pour une navigation fluide.',
             features: [
@@ -141,10 +140,10 @@ const projectsData = {
             image: '🏠',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Solution complète combinant BI et ML pour optimiser la gestion des locations saisonnières.',
-            video: '',
-            images: [],
+            video: 'images/projets/projet5/location.mp4',
+            images: ['images/projets/projet5/Image1.png', 'images/projets/projet5/Image2.png', 'images/projets/projet5/Image3.png', 'images/projets/projet5/Image4.png',],
             longDescription: 'Projet combinant un tableau de bord Power BI pour le suivi opérationnel et un modèle de machine learning pour prédire et corriger automatiquement les erreurs d\'emplacement dans les données de location.',
             features: [
                 'Dashboard Power BI pour suivi opérationnel',
@@ -163,9 +162,9 @@ const projectsData = {
             image: '🤖',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Chatbot intelligent utilisant le NLP pour améliorer l\'expérience client sur un site e-commerce.',
-            video: '',
+            video: 'images/projets/projet6/Chatbot.mp4',
             images: [],
             longDescription: 'Développement d\'un chatbot conversationnel intelligent capable de comprendre les requêtes clients, répondre aux questions sur les produits, guider les achats et améliorer l\'engagement client.',
             features: [
@@ -185,9 +184,9 @@ const projectsData = {
             image: '🌾',
             github: '',
             demo: '',
-            date: '2024',
+            date: '',
             detailDescription: 'Projet de deep learning comparant différentes architectures CNN pour la classification d\'images agricoles avec explicabilité.',
-            video: '',
+            video: 'images/projets/projet7/ImageClassification.mp4',
             images: [],
             longDescription: 'Développement et comparaison de modèles de deep learning pour la classification d\'images agricoles. Le projet inclut l\'entraînement de plusieurs architectures (VGG16, VGG19, Xception), l\'analyse comparative de leurs performances, et l\'implémentation de LIME pour expliquer les prédictions du modèle.',
             features: [
