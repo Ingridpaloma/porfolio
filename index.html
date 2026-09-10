@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio professionnel - Big Data et Intelligence Artificielle">
-    <title>Portfolio - Big Data & IA</title>
+    <meta name="description" content="Professional portfolio — Data Analyst & Analytics Engineer — Ingrid Paloma Pouomegne" data-i18n="metaDescription" data-i18n-attr="content">
+    <title>Ingrid Paloma Pouomegne — Data Analyst | Analytics Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <span class="logo">Portfolio</span>
+                <a href="#accueil" class="logo">Ingrid Paloma</a>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#accueil" class="nav-link">Accueil</a></li>
-                <li><a href="#apropos" class="nav-link">À propos</a></li>
-                <li><a href="#projets" class="nav-link">Projets</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#accueil" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="#apropos" class="nav-link" data-i18n="navAbout">About</a></li>
+                <li><a href="#projets" class="nav-link" data-i18n="navProjects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <div class="lang-switcher" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+                <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" data-i18n="navToggle" data-i18n-attr="aria-label">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,148 +36,147 @@
         </div>
     </nav>
 
-    <!-- Section Accueil -->
+    <!-- Hero -->
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-profile">
-                    <img src="images/profile-pic (1).png" alt="Ingrid Paloma POUOMEGNE" class="profile-photo">
-                </div>
-                <h1 class="hero-name">Ingrid Paloma POUOMEGNE</h1>
-                <h2 class="hero-title">
-                    <span class="gradient-text">Big Data & Intelligence Artificielle</span>
-                </h2>
-                <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
-
-    <!-- Section À propos -->
-    <section id="apropos" class="about">
-        <div class="container">
-            <h2 class="section-title">À propos</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Profil</h3>
-                    <p>
-                        Titulaire d'un Master of science en Big Data et Intelligence Artificielle à l'ESTIA (École d'ingénieur), 
-                        je suis spécialisée dans l'analyse de données complexes, le développement de modèles de machine learning et 
-                        l'implémentation de solutions d'intelligence artificielle.
+                <div class="hero-identity">
+                    <div class="hero-profile">
+                        <img src="images/profile-pic (1).png" alt="Ingrid Paloma Pouomegne" class="profile-photo">
+                    </div>
+                    <h1 class="hero-name">Ingrid Paloma Pouomegne</h1>
+                    <h2 class="hero-title">Data Analyst | Analytics Engineer</h2>
+                    <p class="hero-tagline" data-i18n="heroTagline">Data analysis, business intelligence and business-oriented data solutions</p>
+                    <p class="hero-location">
+                        <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M12 21s7-5.33 7-11a7 7 0 1 0-14 0c0 5.67 7 11 7 11z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span data-i18n="heroLocation">Based in Germany — Available immediately</span>
                     </p>
-                    <h3>Compétences</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Data Science</h4>
-                            <ul>
-                                <li>Analyse exploratoire de données</li>
-                                <li>Statistiques et visualisation</li>
-                                <li>Feature engineering</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Machine Learning</h4>
-                            <ul>
-                                <li>Modèles supervisés/non-supervisés</li>
-                                <li>Deep Learning</li>
-                                <li>Optimisation de modèles</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Big Data</h4>
-                            <ul>
-                                <li>Traitement de données massives</li>
-                                <li>Architectures distribuées</li>
-                                <li>Data pipelines</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Technologies</h4>
-                            <ul>
-                                <li>Python, R, SQL</li>
-                                <li>TensorFlow, PyTorch, Scikit-learn</li>
-                                <li>Spark, Hadoop</li>
-                            </ul>
-                        </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" data-i18n="statExpValue">+2 yrs</span>
+                        <span class="stat-label" data-i18n="statExpLabel">hands-on experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">7</span>
+                        <span class="stat-label" data-i18n="statProjectsLabel">featured projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">GCP, Power BI</span>
+                        <span class="stat-label" data-i18n="statCertLabel">certifications</span>
                     </div>
                 </div>
+
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary" data-i18n="btnProjects">View my projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btnContact">Contact me</a>
+                    <a href="cv/CV_Ingrid_Pouomegne.pdf" class="btn-cv" download>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="btnCv">Download my CV</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Projets -->
+    <!-- About -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="aboutTitle">About</h2>
+            <p class="about-lead" data-i18n="aboutLead">
+                Data Analyst specializing in Analytics Engineering. Turning raw data into clear business decisions by structuring pipelines as carefully as dashboards. Based in Germany, currently building cloud skills with a GCP certification in progress.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 data-i18n="skillBiTitle">Data analysis &amp; BI</h3>
+                    <p data-i18n="skillBiDesc">Power BI, DAX, KPIs</p>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillAeTitle">Analytics engineering</h3>
+                    <p data-i18n="skillAeDesc">SQL, Python pipelines</p>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillCloudTitle">Cloud</h3>
+                    <p data-i18n="skillCloudDesc">GCP — in progress</p>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillLangTitle">Languages</h3>
+                    <p data-i18n="skillLangDesc">FR native, EN B2, DE B1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projets" class="projects">
         <div class="container">
-            <h2 class="section-title">Projets</h2>
-            <p class="section-subtitle">Découvrez mes réalisations organisées par domaine d'expertise</p>
-            
-            <!-- Filtres de catégories -->
-            <div class="category-filters" id="categoryFilters">
-                <button class="filter-btn active" data-category="all">Tous</button>
-                <!-- Les boutons de catégories seront générés dynamiquement -->
+            <h2 class="section-title" data-i18n="projectsTitle">Projects</h2>
+            <p class="section-subtitle" data-i18n="projectsSubtitle">My work in data analysis, business intelligence and analytics engineering</p>
+
+            <div class="projects-subsection">
+                <h3 class="projects-subsection-title" data-i18n="featuredTitle">Featured projects</h3>
+                <p class="projects-subsection-subtitle" data-i18n="featuredSubtitle">Dashboards, reporting and business-oriented data solutions</p>
+                <div class="projects-grid" id="featuredProjectsGrid"></div>
             </div>
 
-            <!-- Grille de projets -->
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Les projets seront générés dynamiquement depuis projects.js -->
+            <div class="projects-subsection" id="otherProjectsSection">
+                <h3 class="projects-subsection-title" data-i18n="otherTitle">Other work</h3>
+                <p class="projects-subsection-subtitle" data-i18n="otherSubtitle">Complementary projects in artificial intelligence</p>
+                <div class="projects-grid projects-grid--compact" id="otherProjectsGrid"></div>
             </div>
         </div>
     </section>
 
-    <!-- Section Détail Projet -->
+    <!-- Project detail -->
     <section id="project-detail" class="project-detail hidden">
         <div class="container">
             <button class="back-button" id="backButton">
-                <span>←</span> Retour aux projets
+                <span>←</span> <span data-i18n="backToProjects">Back to projects</span>
             </button>
-            <div class="project-detail-content" id="projectDetailContent">
-                <!-- Le contenu sera généré dynamiquement -->
-            </div>
+            <div class="project-detail-content" id="projectDetailContent"></div>
         </div>
     </section>
 
-    <!-- Section Contact -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-subtitle">N'hésitez pas à me contacter pour discuter de vos projets</p>
+            <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
+            <p class="section-subtitle" data-i18n="contactSubtitle">Feel free to reach out to discuss your projects</p>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3><span class="contact-icon">📧</span> Email</h3>
+                        <h3>Email</h3>
                         <p><a href="mailto:ingridpouomegne@gmail.com">ingridpouomegne@gmail.com</a></p>
                     </div>
                     <div class="contact-item">
-                        <h3><span class="contact-icon">💼</span> LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/ingrid-pouomegne/" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a></p>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/ingrid-pouomegne/" target="_blank" rel="noopener noreferrer" data-i18n="linkedinProfile">LinkedIn profile</a></p>
                     </div>
                     <div class="contact-item">
-                        <h3><span class="contact-icon">🐙</span> GitHub</h3>
+                        <h3>GitHub</h3>
                         <p><a href="https://github.com/Ingridpaloma" target="_blank" rel="noopener noreferrer">github.com/Ingridpaloma</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3><span class="contact-icon">📱</span> Téléphone</h3>
-                        <p><a href="tel:+33779099736">+33 7 79 09 97 36</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Portfolio. Tous droits réservés.</p>
+            <p>&copy; 2026 Ingrid Paloma Pouomegne. <span data-i18n="footerRights">All rights reserved.</span></p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="projects.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
