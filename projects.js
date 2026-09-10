@@ -48,7 +48,7 @@ const projectsData = {
                 fr: 'Ce projet complet combine analyse de données, machine learning et visualisation interactive. Il comprend une analyse approfondie des comportements clients, la création de segments RFM, et un modèle prédictif déployé via une application web.',
                 de: 'Dieses Projekt verbindet Datenanalyse, Machine Learning und interaktive Visualisierung: tiefgehende Kundenverhaltensanalyse, RFM-Segmente und ein als Webapp bereitgestelltes Vorhersagemodell.'
             },
-            video: 'images/projets/projet1/demonstration2.mp4',
+            video: 'images/projets/projet1/Demonstration2.mp4',
             images: [
                 'images/projets/projet1/Vue_Globale.png',
                 'images/projets/projet1/Analyse_client.png',
@@ -113,7 +113,7 @@ const projectsData = {
                 fr: 'Tableau de bord complet pour l\'analyse des ressources humaines avec visualisations interactives et KPIs clés.',
                 de: 'Vollständiges HR-Analyse-Dashboard mit interaktiven Visualisierungen und zentralen KPIs.'
             },
-            video: 'images/projets/projet2/Analyse_RH.mp4',
+            video: 'images/projets/projet2/Analyse_Rh.mp4',
             images: [],
             longDescription: {
                 en: 'Created a professional Power BI dashboard to analyze HR data, covering recruitment, retention, diversity, performance and more.',
